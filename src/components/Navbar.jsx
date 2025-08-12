@@ -28,43 +28,43 @@ const Navbar = () => {
 
   // Styling for the menu button and navicon
   const menuIconStyle = {
-    position: 'relative',
-    width: '28px',
-    height: '20px',
-    display: 'flex',
-    justifyContent: 'center',
-    cursor: 'pointer',
-    flexDirection: 'column',
-    alignItems: 'center',
+    position: "relative",
+    width: "28px",
+    height: "20px",
+    display: "flex",
+    justifyContent: "center",
+    cursor: "pointer",
+    flexDirection: "column",
+    alignItems: "center",
   };
 
   const barCommonStyle = {
-    background: 'white',
-    display: 'block',
-    height: '2px',
-    width: '18px',
-    borderRadius: '2px',
-    position: 'absolute',
-    transition: 'all 0.2s ease-out',
+    background: "white",
+    display: "block",
+    height: "2px",
+    width: "18px",
+    borderRadius: "2px",
+    position: "absolute",
+    transition: "all 0.2s ease-out",
   };
 
   const topBarStyle = {
     ...barCommonStyle,
-    top: toggle ? '50%' : '5px',
-    transform: toggle ? 'rotate(-45deg)' : 'none',
+    top: toggle ? "50%" : "5px",
+    transform: toggle ? "rotate(-45deg)" : "none",
   };
 
   const middleBarStyle = {
     ...barCommonStyle,
     opacity: toggle ? 0 : 1,
-    top: '50%',
-    transition: 'opacity 0.2s ease-out',
+    top: "50%",
+    transition: "opacity 0.2s ease-out",
   };
 
   const bottomBarStyle = {
     ...barCommonStyle,
-    top: toggle ? '50%' : '15px',
-    transform: toggle ? 'rotate(45deg)' : 'none',
+    top: toggle ? "50%" : "15px",
+    transform: toggle ? "rotate(45deg)" : "none",
   };
 
   return (
@@ -75,24 +75,24 @@ const Navbar = () => {
         scrolled ? "bg-primary shadow-lg" : "bg-transparent"
       }`}
     >
-      <div className='w-full flex justify-between items-center max-w-7xl mx-auto'>
+      <div className="w-full flex justify-between items-center max-w-7xl mx-auto">
         <Link
-          to='/'
-          className='flex items-center gap-2'
+          to="/"
+          className="flex items-center gap-2"
           onClick={() => {
             setActive("");
             window.scrollTo(0, 0);
           }}
         >
-          <img src={logo} alt='logo' className='w-9 h-9 object-contain' />
-          <motion.p 
-            className='text-white text-[18px] font-bold cursor-pointer flex items-center'
+          <img src={logo} alt="logo" className="w-9 h-9 object-contain" />
+          <motion.p
+            className="text-white text-[18px] font-bold cursor-pointer flex items-center"
             initial={{ opacity: 0, y: -20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5 }}
           >
-            <span 
-              className='block' 
+            <span
+              className="block"
               style={{
                 fontFamily: "'Dancing Script', cursive",
                 fontSize: "26px",
@@ -101,14 +101,14 @@ const Navbar = () => {
                 WebkitTextFillColor: "transparent",
                 backgroundClip: "text",
                 textFillColor: "transparent",
-              }} 
+              }}
             >
-              {"</"}Sunny Patel{">"}
+              {"</"}Arpanendu Khag{">"}
             </span>
           </motion.p>
         </Link>
 
-        <ul className='list-none hidden sm:flex flex-row gap-10'>
+        <ul className="list-none hidden sm:flex flex-row gap-10">
           {navLinks.map((nav) => (
             <motion.li
               key={nav.id}
@@ -129,7 +129,7 @@ const Navbar = () => {
           ))}
         </ul>
 
-        <div className='sm:hidden flex flex-1 justify-end items-center'>
+        <div className="sm:hidden flex flex-1 justify-end items-center">
           {/* Menu Icon Toggle */}
           <div style={menuIconStyle} onClick={() => setToggle(!toggle)}>
             <span style={topBarStyle}></span>
@@ -146,7 +146,7 @@ const Navbar = () => {
             animate={{ opacity: toggle ? 1 : 0, scale: toggle ? 1 : 0.95 }}
             transition={{ duration: 0.2 }}
           >
-            <ul className='list-none flex justify-end items-start flex-1 flex-col gap-4'>
+            <ul className="list-none flex justify-end items-start flex-1 flex-col gap-4">
               {navLinks.map((nav) => (
                 <motion.li
                   key={nav.id}

@@ -1,8 +1,8 @@
 import React, { useRef, useState, useCallback, useEffect } from "react";
 import { motion } from "framer-motion";
 import emailjs from "@emailjs/browser";
-import { Toaster, toast } from 'react-hot-toast';
-import Confetti from 'react-confetti';
+import { Toaster, toast } from "react-hot-toast";
+import Confetti from "react-confetti";
 import ReCAPTCHA from "react-google-recaptcha"; // <-- NEW
 
 import { styles } from "../styles";
@@ -11,7 +11,14 @@ import { SectionWrapper } from "../hoc";
 import { slideIn } from "../utils/motion";
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faUser, faEnvelope, faComment, faPaperPlane, faSpinner, faPhone } from "@fortawesome/free-solid-svg-icons";
+import {
+  faUser,
+  faEnvelope,
+  faComment,
+  faPaperPlane,
+  faSpinner,
+  faPhone,
+} from "@fortawesome/free-solid-svg-icons";
 
 const Contact = () => {
   const formRef = useRef();
@@ -39,9 +46,9 @@ const Contact = () => {
   };
 
   useEffect(() => {
-    window.addEventListener('resize', detectSize);
+    window.addEventListener("resize", detectSize);
     return () => {
-      window.removeEventListener('resize', detectSize);
+      window.removeEventListener("resize", detectSize);
     };
   }, []);
 
@@ -68,17 +75,20 @@ const Contact = () => {
     if (!form.name || !form.email || !form.message) {
       toast.error("Please fill all fields before submitting. ⚠️", {
         duration: 3000,
-        position: 'bottom-right',
+        position: "bottom-right",
       });
       return;
     }
 
     if (!captchaToken) {
-      toast("Hold up! Gotta make sure you're not a spam bot, checkmark the CAPTCHA! 🧠🤖", {
-        icon: '🛡️',
-        duration: 3500,
-        position: 'bottom-right',
-      });
+      toast(
+        "Hold up! Gotta make sure you're not a spam bot, checkmark the CAPTCHA! 🧠🤖",
+        {
+          icon: "🛡️",
+          duration: 3500,
+          position: "bottom-right",
+        }
+      );
       return;
     }
 
@@ -90,9 +100,9 @@ const Contact = () => {
         import.meta.env.VITE_EMAILJS_TEMPLATE_ID,
         {
           from_name: form.name,
-          to_name: "Sunny Patel",
+          to_name: "Arpanendu Khag",
           from_email: form.email,
-          to_email: "sunnypatel124555@gmail.com",
+          to_email: "arpanendu2403@gmail.com",
           message: form.message,
         },
         import.meta.env.VITE_EMAIL_JS_ACCESS_TOKEN
@@ -104,7 +114,7 @@ const Contact = () => {
           setForm({ name: "", email: "", message: "" });
           toast.success("Message sent successfully!", {
             duration: 3000,
-            position: 'bottom-right',
+            position: "bottom-right",
           });
           setShowConfetti(true);
           setCaptchaToken(null);
@@ -119,7 +129,7 @@ const Contact = () => {
           console.error(error);
           toast.error("Something went wrong. Please try again.", {
             duration: 3000,
-            position: 'bottom-right',
+            position: "bottom-right",
           });
         }
       );

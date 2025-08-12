@@ -104,26 +104,37 @@ const services = [
 
 const education = [
   {
-    title: "Honours Computer Science (H. BSc)",
-    company_name: "Ontario Tech University, Oshawa, ON",
+    title: "Bachelor of Technology in Computer Science",
+    company_name: "Dr. B.C. Roy Engineering College",
     icon: otu,
     iconBg: "#fff",
-    date: "2022 - Present",
+    date: "2021 - 2025",
     points: [
-      "Dean's Honours List - Fall 2024",
+      "Durgapur, West Bengal",
       // "Courses undertaken: Data Structures and Algorithms, OOP, REST API, Software Design, Python Data Analysis, Discrete Mathematics, Computer Architecture, Operating Systems, PostgreSQL.",
     ],
   },
   {
-    title: "High School",
-    company_name: "Richmond Hill High School, ON",
+    title: "Higher Secondary School",
+    company_name: "DAV PUBLIC SCHOOL ECL PANDAVESWAR",
     icon: rhhs,
     iconBg: "#fff",
-    date: "2018-2022",
+    date: "2019-2021",
     points: [
-      "Ontario Scholar",
-      "12th Grade: 96%",
+      "Pandaveswar, Paschim Bardhaman, West Bengal",
+      "Science Stream with Computer Science",
       ,
+    ],
+  },
+  {
+    title: "Senior Secondary School",
+    company_name: "DAV PUBLIC SCHOOL HETAMPUR RAJBATI",
+    icon: otu,
+    iconBg: "#fff",
+    date: "2019 - 2009",
+    points: [
+      "Hetampur, West Bengal",
+      // "Courses undertaken: Data Structures and Algorithms, OOP, REST API, Software Design, Python Data Analysis, Discrete Mathematics, Computer Architecture, Operating Systems, PostgreSQL.",
     ],
   },
 ];
@@ -141,7 +152,7 @@ const technologies = [
     name: "C++",
     icon: cplusplus,
   },
-    {
+  {
     name: "Powershell",
     icon: powershell,
   },
@@ -165,10 +176,10 @@ const technologies = [
     name: "HTML 5",
     icon: html,
   },
-    {
+  {
     name: "Tailwind CSS",
     icon: tailwind,
-  }, 
+  },
   {
     name: "React JS",
     icon: reactjs,
@@ -254,11 +265,11 @@ const designTools = [
 
 const experiences = [
   {
-    title: "IT Technician - Canada's Wonderland",
-    company_name: "Canada's Wonderland",
+    title: "Assitant ML Engineer - L1",
+    company_name: "Capsitech Technologies",
     icon: wonderland,
     iconBg: "#fff",
-    date: "Jun. 2023 - Present",
+    date: "Jun. 2025 - Present",
     points: [
       "Provisioned Windows PCs with MDT, and deployed scripting via PowerShell and ConnectWise.",
       "Managed AD accounts to propagate ACLs and unified access across in-house apps, Exchange, and SharePoint.",
@@ -297,7 +308,6 @@ const experiences = [
   },
 ];
 
-
 const extracurricular = [
   {
     title: "MongoDB Python Developer Path",
@@ -305,7 +315,9 @@ const extracurricular = [
     icon: mongodb,
     iconBg: "#000000",
     date: "Feb 2025",
-    points: ["PyMongo, NoSQL Schema Design, Data Aggregation, MongoDB Query Optimization"],
+    points: [
+      "PyMongo, NoSQL Schema Design, Data Aggregation, MongoDB Query Optimization",
+    ],
     credential: "https://learn.mongodb.com/c/tf2DSC7hTcyM3NBZjkLPoA",
   },
   {
@@ -314,8 +326,11 @@ const extracurricular = [
     icon: github,
     iconBg: "#000000",
     date: "Issued: Sep 2024 - Expires: Sep 2027",
-    points: ["Version Control, Git, Actions, CI/CD, Repository Management, SAP Workflow"],
-    credential: "https://www.credly.com/badges/b6f69785-2da8-447e-b02c-3350bf9af803",
+    points: [
+      "Version Control, Git, Actions, CI/CD, Repository Management, SAP Workflow",
+    ],
+    credential:
+      "https://www.credly.com/badges/b6f69785-2da8-447e-b02c-3350bf9af803",
   },
   {
     title: "Certified Enterprise Scripting Architect",
@@ -323,7 +338,9 @@ const extracurricular = [
     icon: connectwise,
     iconBg: "#748C7B",
     date: "Jul 2024",
-    points: ["RMM, MDM, Powershell, Scripting, Windows Server, Enterprise Architecture, Query Optimization"],
+    points: [
+      "RMM, MDM, Powershell, Scripting, Windows Server, Enterprise Architecture, Query Optimization",
+    ],
     credential: connectwisecert,
   },
   {
@@ -335,7 +352,8 @@ const extracurricular = [
     points: [
       "Configuration Management, Automation, Google Cloud Platform (GCP), Cloud Servers and VM's, Version Control Tools, Automation.",
     ],
-    credential: "https://www.coursera.org/account/accomplishments/specialization/certificate/82SZFUWF4B3T",
+    credential:
+      "https://www.coursera.org/account/accomplishments/specialization/certificate/82SZFUWF4B3T",
   },
   {
     title: "WHMIS (Worker Health and Safety)",
@@ -343,7 +361,9 @@ const extracurricular = [
     icon: whmis,
     iconBg: "#CCCFD8",
     date: "Sep 2020",
-    points: ["Hazard Awareness, Legal Compliance, Personal Protection, Accident Prevention"],
+    points: [
+      "Hazard Awareness, Legal Compliance, Personal Protection, Accident Prevention",
+    ],
   },
 ];
 
@@ -397,7 +417,8 @@ const projects = [
       },
     ],
     image: sunnifyimage,
-    source_code_link: "https://github.com/sunnypatell/sunnify-spotify-downloader",
+    source_code_link:
+      "https://github.com/sunnypatell/sunnify-spotify-downloader",
     live_project_link: "https://sunnify-spotify-downloader.vercel.app/",
   },
   {
@@ -423,7 +444,8 @@ const projects = [
       },
     ],
     image: enterpriseapitester,
-    source_code_link: "https://github.com/sunnypatell/enterprise-api-request-tester",
+    source_code_link:
+      "https://github.com/sunnypatell/enterprise-api-request-tester",
     live_project_link: "https://enterprise-api-request-tester.vercel.app/",
   },
   {
@@ -483,8 +505,10 @@ const projects = [
       },
     ],
     image: pythonanalysis,
-    source_code_link: "https://drive.google.com/drive/folders/1cTbp-6-flypV-kj3-q606UwwWEralu11",
-    live_project_link: "https://drive.google.com/drive/folders/1cTbp-6-flypV-kj3-q606UwwWEralu11",
+    source_code_link:
+      "https://drive.google.com/drive/folders/1cTbp-6-flypV-kj3-q606UwwWEralu11",
+    live_project_link:
+      "https://drive.google.com/drive/folders/1cTbp-6-flypV-kj3-q606UwwWEralu11",
   },
   {
     name: "Secure Password Generator 🔐",
@@ -551,5 +575,5 @@ export {
   extracurricular,
   projects,
   education,
-  testimonials
+  testimonials,
 };

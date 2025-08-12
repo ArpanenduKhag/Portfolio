@@ -75,9 +75,9 @@ const Tech = () => {
   });
 
   const ref = useRef(null);
-  const isInView = useInView(ref, { 
+  const isInView = useInView(ref, {
     once: true,
-    amount: 0.2
+    amount: 0.2,
   });
   const mainControls = useAnimation();
 
@@ -133,20 +133,20 @@ const Tech = () => {
 
   const hexagonVariants = {
     hidden: { opacity: 0, scale: 0.8 },
-    visible: { 
-      opacity: 1, 
-      scale: 1, 
-      transition: { 
-        delay: Math.random() * 1.5, 
-        duration: 0.5, 
-        type: "spring" 
-      } 
+    visible: {
+      opacity: 1,
+      scale: 1,
+      transition: {
+        delay: Math.random() * 1.5,
+        duration: 0.5,
+        type: "spring",
+      },
     },
     hover: {
       scale: 1.05,
       zIndex: 2,
-      transition: { duration: 0.3 }
-    }
+      transition: { duration: 0.3 },
+    },
   };
 
   const renderCategory = (categoryName, categoryRows) => (
@@ -181,7 +181,9 @@ const Tech = () => {
         {categoryRows?.map((row, rowIndex) => (
           <div
             key={`${categoryName}-row-${rowIndex}`}
-            className={`honeycomb-row ${rowIndex % 2 === 1 ? "staggered-row" : ""}`}
+            className={`honeycomb-row ${
+              rowIndex % 2 === 1 ? "staggered-row" : ""
+            }`}
           >
             {row.map((tech) => (
               <motion.div
@@ -192,7 +194,12 @@ const Tech = () => {
                 animate="visible"
                 whileHover="hover"
               >
-                <img src={tech.icon} alt={tech.name}  style={{ userSelect: "none" }} draggable="false"/>
+                <img
+                  src={tech.icon}
+                  alt={tech.name}
+                  style={{ userSelect: "none" }}
+                  draggable="false"
+                />
               </motion.div>
             ))}
           </div>
@@ -222,7 +229,9 @@ const Tech = () => {
     <section className="skills" ref={ref}>
       <div className="container">
         <motion.div variants={textVariant()}>
-          <p className={`${styles.sectionSubText} text-center`}>Technical Proficiencies</p>
+          <p className={`${styles.sectionSubText} text-center`}>
+            Technical Proficiencies
+          </p>
           <h2 className={`${styles.sectionHeadText} text-center`}>Skills.</h2>
         </motion.div>
         {renderCategory("programming", rows.programming)}
