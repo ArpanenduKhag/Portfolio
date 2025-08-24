@@ -6,6 +6,7 @@ import { SectionWrapper } from "../hoc";
 import { fadeIn, textVariant } from "../utils/motion";
 import { resume, profilepic } from "../assets";
 
+// This ServiceCard component seems unused in the About section but is good to keep if used elsewhere.
 const ServiceCard = ({ index, title, icon }) => (
   <motion.div
     variants={fadeIn("up", "spring", index * 0.5, 0.75)}
@@ -24,11 +25,9 @@ const ServiceCard = ({ index, title, icon }) => (
           whileHover={{ rotate: 360 }}
           transition={{ duration: 0.8, ease: "easeInOut" }}
         />
-
         <h3 className="text-white text-[20px] font-bold text-center">
           {title}
         </h3>
-
         <motion.div
           className="absolute inset-0 bg-gradient-to-r from-purple-500 to-pink-500 opacity-0"
           whileHover={{ opacity: 0.2 }}
@@ -83,7 +82,7 @@ const About = () => {
             <div className="w-full h-full overflow-hidden">
               <img
                 src={profilepic}
-                alt="Sunny Patel"
+                alt="Arpanendu Khag" // UPDATED
                 className="w-full h-full object-cover"
                 style={{
                   objectFit: "cover",
@@ -145,6 +144,7 @@ const About = () => {
           variants={fadeIn("left", "spring", 0.5, 0.75)}
           className="w-full md:w-2/3"
         >
+          {/* UPDATED TEXT CONTENT BELOW */}
           <motion.ul
             variants={fadeIn("", "", 0.1, 1)}
             className="mt-4 text-secondary text-[17px] max-w-3xl space-y-6 list-none"
@@ -155,8 +155,9 @@ const About = () => {
             >
               <span className="mr-4 text-2xl flex-shrink-0">👨‍💻</span>
               <span>
-                I&apos;m an AI/ML Engineer with a solid foundation in
-                programming, machine learning, and data-driven problem-solving.
+                I&apos;m a passionate developer specializing in Machine Learning
+                and Data Engineering, with a strong foundation in building and
+                validating deep learning models.
               </span>
             </motion.li>
             <motion.li
@@ -165,30 +166,34 @@ const About = () => {
             >
               <span className="mr-4 text-2xl flex-shrink-0">🎓</span>
               <span>
-                Currently working toward my Honours Bachelor of Science in
-                Computer Science at Ontario Tech University, I&apos;m all about
-                building reliable, scalable software that makes a difference.
+                As a recent graduate with a B.Tech in Computer Science &
+                Engineering from Dr. B.C. Roy Engineering College, my goal is to
+                apply my skills to create efficient, intelligent solutions to
+                real-world problems.
               </span>
             </motion.li>
             <motion.li
               className="flex items-start"
               variants={fadeIn("up", "spring", 0.3, 0.75)}
             >
-              <span className="mr-4 text-2xl flex-shrink-0">🛠</span>
+              <span className="mr-4 text-2xl flex-shrink-0">🛠️</span>
               <span>
-                From full-stack development to cloud-based solutions, I&apos;ve
-                led enterprise-level projects that streamline operations and
-                deliver real impact.
+                Through internships in Machine Learning and Software
+                Development, I&apos;ve gained hands-on experience in developing
+                AI-powered security tools, engineering data pipelines, and
+                contributing to full-stack applications.
               </span>
             </motion.li>
             <motion.li
               className="flex items-start"
               variants={fadeIn("up", "spring", 0.4, 0.75)}
             >
-              <span className="mr-4 text-2xl flex-shrink-0">🔧</span>
+              <span className="mr-4 text-2xl flex-shrink-0">🚀</span>
               <span>
-                I enjoy automating workflows, optimizing systems, and turning
-                complex challenges into real results. 📈
+                I thrive on creative problem-solving, whether it&apos;s
+                designing a neural network for threat detection, building a
+                real-time gesture recognition system, or tackling algorithmic
+                challenges.
               </span>
             </motion.li>
             <motion.li
@@ -196,7 +201,11 @@ const About = () => {
               variants={fadeIn("up", "spring", 0.5, 0.75)}
             >
               <span className="mr-4 text-2xl flex-shrink-0">💡</span>
-              <span>I&apos;m always curious and constantly learning.</span>
+              <span>
+                I&apos;m a quick learner with a strong passion for exploring new
+                technologies and continuously honing my skills in the
+                ever-evolving worlds of AI and cloud computing.
+              </span>
             </motion.li>
           </motion.ul>
         </motion.div>

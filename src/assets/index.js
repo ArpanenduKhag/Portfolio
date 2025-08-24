@@ -1,4 +1,4 @@
-import profilepic from './pfp.png';
+import profilepic from "./pfp.jpg";
 
 import logo from "./logo0.png";
 import backend from "./backend.png";
@@ -23,51 +23,55 @@ import postgresql from "./tech/postgresql.png";
 import mongodb from "./tech/mongodb.png";
 import linux from "./tech/linux.png";
 import tailwind from "./tech/tailwind.png";
-import python from "./tech/python.png"
-import cplusplus from "./tech/c++.svg"
-import typescript from "./tech/typescript.png"
-import threejs from "./tech/threejs.svg"
+import python from "./tech/python.png";
+import cplusplus from "./tech/c++.svg";
+import typescript from "./tech/typescript.png";
+import threejs from "./tech/threejs.svg";
 
 import azure from "./tech/azure.png";
-import powershell from "./tech/powershell.svg"
-import cisco from "./tech/cisco.svg"
-import connectwise from "./tech/connectwise.png"
-import virtualbox from "./tech/virtualbox.png"
-import kalilinux from "./tech/kali_linux.svg"
-import wireshark from "./tech/wireshark.png"
-import nmap from "./tech/nmap.svg"
-import metasploit from "./tech/metasploit.svg"
-import johntheripper from "./tech/johntheripper.svg"
-import hydra from "./tech/hydra.svg"
-import aircrackng from "./tech/aircrackng.svg"
+import powershell from "./tech/powershell.svg";
+import cisco from "./tech/cisco.svg";
+import connectwise from "./tech/connectwise.png";
+import virtualbox from "./tech/virtualbox.png";
+import kalilinux from "./tech/kali_linux.svg";
+import wireshark from "./tech/wireshark.png";
+import nmap from "./tech/nmap.svg";
+import metasploit from "./tech/metasploit.svg";
+import johntheripper from "./tech/johntheripper.svg";
+import hydra from "./tech/hydra.svg";
+import aircrackng from "./tech/aircrackng.svg";
 
-import photoshop from "./tech/photoshop.svg"
-import premiere from "./tech/premiere.svg"
-import cinema4d from "./tech/cinema4d.png"
-import blender from "./tech/blender.svg"
+import photoshop from "./tech/photoshop.svg";
+import premiere from "./tech/premiere.svg";
+import cinema4d from "./tech/cinema4d.png";
+import blender from "./tech/blender.svg";
 
-
-import otu from "./company/otu.png"
-import rhhs from "./company/rhhs.jpg"
-import wonderland from "./company/wonderland.jpg"
-import mackenziehealth from "./company/mackenziehealth.png"
-import privcurity from "./company/privcurity.jpg"
-import staples from "./company/staples.png"
-import google from "./company/google.png"
-import whmis from "./company/whmis.png"
+import otu from "./company/otu.png";
+import BCREC from "./company/BCREC.jpeg";
+import DAV from "./company/dav.png";
+import rhhs from "./company/rhhs.jpg";
+import wonderland from "./company/wonderland.jpg";
+import Capsitech_Technologies from "./company/capsitech_technologies.png";
+import mackenziehealth from "./company/mackenziehealth.png";
+import DiMark_AI from "./company/DiMark_AI.png";
+import privcurity from "./company/privcurity.jpg";
+import Celebal_Technologies from "./company/Celebal_Technologies.jpeg";
+import staples from "./company/staples.png";
+import google from "./company/google.png";
+import whmis from "./company/whmis.png";
 import aws from "./tech/aws.png";
 
-import sunnifyimage from "./demonstration 2.jpg"
-import knifethrowimage from "./knifethrow_demonstration.jpg"
-import pythonanalysis from "./data_analysis.png"
-import password_generator from "./passwordgenerator.png"
-import wordsearch from "./wordsearchoutput.jpg"
-import financialflowimage from "./FinancialFlowDemonstration.png"
-import enterpriseapitester from "./enterpriseapiui.png"
+import sunnifyimage from "./demonstration 2.jpg";
+import knifethrowimage from "./knifethrow_demonstration.jpg";
+import pythonanalysis from "./data_analysis.png";
+import password_generator from "./passwordgenerator.png";
+import wordsearch from "./wordsearchoutput.jpg";
+import financialflowimage from "./FinancialFlowDemonstration.png";
+import enterpriseapitester from "./enterpriseapiui.png";
 
 import resume from "./Resume-Sunny-Patel.pdf";
-import awsdbcert from "./AWS Database Specialty Certified - Sunny Jayendra Patel.jpg"
-import connectwisecert from "./Connectwise-Scripting-Certification.pdf"
+import awsdbcert from "./AWS Database Specialty Certified - Sunny Jayendra Patel.jpg";
+import connectwisecert from "./Connectwise-Scripting-Certification.pdf";
 
 export {
   logo,
@@ -91,10 +95,15 @@ export {
   mongodb,
   aws,
   otu,
+  BCREC,
+  DAV,
   rhhs,
   wonderland,
+  Capsitech_Technologies,
   mackenziehealth,
+  DiMark_AI,
   privcurity,
+  Celebal_Technologies,
   google,
   whmis,
   sunnifyimage,
@@ -131,5 +140,5 @@ export {
   mysql,
   threejs,
   azure,
-  staples
+  staples,
 };
