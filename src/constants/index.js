@@ -23,6 +23,7 @@ import {
   privcurity,
   Celebal_Technologies,
   staples,
+  GDG_dgp,
   google,
   whmis,
   aws,
@@ -270,15 +271,27 @@ const designTools = [
 
 const experiences = [
   {
-    title: "Assitant ML Engineer - L1",
+    title: "Assistant ML Engineer - L1",
     company_name: "Capsitech Technologies",
-    icon: Capsitech_Technologies,
+    icon: Capsitech_Technologies, // Assuming you have this icon variable
     iconBg: "#383E56",
     date: "June 2025 - Present",
     points: [
-      "Developed and implemented an advanced deep learning model using BiLSTM to detect and classify email spoofing and phishing attacks.",
-      "Validated model performance, achieving high accuracy through key metrics including Precision, Recall, F1-score, and AUC-ROC analysis.",
-      "Conducted rigorous cross-dataset validation to ensure model robustness and generalizability for real-world applications.",
+      "Developing an advanced deep learning model using BiLSTM to detect and classify email spoofing and phishing attacks from email content and header fields.",
+      "Achieving high accuracy by validating the model's performance using key metrics such as Precision, Recall, F1-score, and AUC-ROC analysis.",
+      "Conducted rigorous cross-dataset validation to ensure the model's robustness and generalizability for real-world scenarios.",
+    ],
+  },
+  {
+    title: "ML Intern (Remote)",
+    company_name: "Capsitech Technologies",
+    icon: Capsitech_Technologies, // Assuming you have this icon variable
+    iconBg: "#383E56",
+    date: "January 2025 - May 2025",
+    points: [
+      "Completed an intensive, project-based training program covering the entire data science pipeline, from data analysis and visualization to advanced machine learning and deep learning.",
+      "Gained hands-on experience with key technologies including Python, TensorFlow, Keras, Scikit-learn, NLTK, and SQL.",
+      "Developed and deployed multiple industrial projects and a final capstone project, demonstrating practical application of learned concepts.",
     ],
   },
   {
@@ -304,6 +317,18 @@ const experiences = [
       "Engineered data processing pipelines using Python (Pandas) and SQL for data extraction, transformation, and loading (ETL).",
       "Performed data cleaning and manipulation on large datasets to ensure data quality and integrity for analysis.",
       "Automated a daily data aggregation task using a Python script, saving approximately 5 hours of manual work per week.",
+    ],
+  },
+  {
+    title: "Graphics Team Lead & Web Developer",
+    company_name: "Google Developer Groups - Durgapur",
+    icon: GDG_dgp,
+    iconBg: "#FBC3A4",
+    date: "Sept 2022 - August 2024",
+    points: [
+      "Spearheaded the graphics design team, directing the creation of visual content for events, workshops, and social media outreach.",
+      "Developed new features and maintained the official GDG chapter website, enhancing the community's web presence.",
+      "Collaborated with event organizers to ensure branding consistency across all promotional materials.",
     ],
   },
 ];

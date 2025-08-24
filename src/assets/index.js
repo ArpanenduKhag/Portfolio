@@ -57,6 +57,7 @@ import DiMark_AI from "./company/DiMark_AI.png";
 import privcurity from "./company/privcurity.jpg";
 import Celebal_Technologies from "./company/Celebal_Technologies.jpeg";
 import staples from "./company/staples.png";
+import GDG_dgp from "./company/GDG_dgp.webp";
 import google from "./company/google.png";
 import whmis from "./company/whmis.png";
 import aws from "./tech/aws.png";
@@ -104,6 +105,7 @@ export {
   DiMark_AI,
   privcurity,
   Celebal_Technologies,
+  GDG_dgp,
   google,
   whmis,
   sunnifyimage,
