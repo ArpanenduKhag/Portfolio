@@ -283,7 +283,7 @@ const experiences = [
     ],
   },
   {
-    title: "ML Intern (Remote)",
+    title: "ML Intern",
     company_name: "Capsitech Technologies",
     icon: Capsitech_Technologies, // Assuming you have this icon variable
     iconBg: "#383E56",
