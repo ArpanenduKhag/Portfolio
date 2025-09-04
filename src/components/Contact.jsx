@@ -164,7 +164,7 @@ const Contact = () => {
             className="text-purple-500 hover:text-purple-400 transition-colors duration-300 flex items-center"
           >
             <FontAwesomeIcon icon={faPhone} className="mr-2" />
-            (437) 216-1611
+            (+91) 9635704940
           </a>
         </div>
         <h3 className={styles.sectionHeadText}>Contact.</h3>
