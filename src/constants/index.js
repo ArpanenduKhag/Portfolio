@@ -30,6 +30,11 @@ import {
   python,
   cplusplus,
   typescript,
+  DoctorAI,
+  Sanket,
+  Assistant,
+  PharmaPOS,
+  Hockey,
   sunnifyimage,
   knifethrowimage,
   pythonanalysis,
@@ -54,6 +59,15 @@ import {
   awsdbcert,
   financialflowimage,
   enterpriseapitester,
+  figma,
+  Canva,
+  GIT_1,
+  PowerBI,
+  C,
+  SQL,
+  mysql,
+  Teams,
+  Slack,
   github,
   mongodb,
 } from "../assets";
@@ -155,16 +169,16 @@ const technologies = [
     icon: python,
   },
   {
-    name: "C++",
-    icon: cplusplus,
+    name: "C",
+    icon: C,
   },
   {
     name: "Powershell",
     icon: powershell,
   },
   {
-    name: "Kali Linux",
-    icon: kalilinux,
+    name: "SQL",
+    icon: SQL,
   },
   {
     name: "MongoDB",
@@ -182,40 +196,20 @@ const technologies = [
     name: "HTML 5",
     icon: html,
   },
-  {
-    name: "Tailwind CSS",
-    icon: tailwind,
-  },
-  {
-    name: "React JS",
-    icon: reactjs,
-  },
-  {
-    name: "Typescript",
-    icon: typescript,
-  },
-  {
-    name: "AWS",
-    icon: aws,
-  },
 ];
 
 const itTools = [
   {
-    name: "Powershell",
-    icon: powershell,
+    name: "Github",
+    icon: GIT_1,
   },
   {
-    name: "Cisco",
-    icon: cisco,
+    name: "Teams",
+    icon: Teams,
   },
   {
-    name: "ConnectWise",
-    icon: connectwise,
-  },
-  {
-    name: "VirtualBox",
-    icon: virtualbox,
+    name: "Github",
+    icon: GIT_1,
   },
 ];
 
@@ -252,12 +246,12 @@ const cybersecurityTools = [
 
 const designTools = [
   {
-    name: "Photoshop",
-    icon: photoshop,
+    name: "Canva",
+    icon: Canva,
   },
   {
-    name: "Premiere",
-    icon: premiere,
+    name: "Figma",
+    icon: figma,
   },
   {
     name: "Cinema 4D",
@@ -394,172 +388,73 @@ const extracurricular = [
 
 const projects = [
   {
-    name: "FinancialFlow 💸",
+    name: "Doctor AI – Healthcare Chatbot 🩺",
     description:
-      "Comprehensive personal finance management application built with Next.js and Typescript. It empowers users to take control of their financial health through intuitive tracking, insightful analytics, and personalized recommendations.",
+      "An AI-powered virtual medical assistant that interacts with users through text and voice to provide basic healthcare advice, preliminary symptom analysis, and appointment guidance. Built using NLTK, TensorFlow, and Speech Recognition, it processes natural language queries and responds in real time.",
     tags: [
-      {
-        name: "React-native",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "Typescript",
-        color: "green-text-gradient",
-      },
-      {
-        name: "Tailwind CSS",
-        color: "pink-text-gradient",
-      },
-      {
-        name: "Next.js",
-        color: "blue-text-gradient",
-      },
+      { name: "Python", color: "blue-text-gradient" },
+      { name: "NLTK", color: "green-text-gradient" },
+      { name: "TensorFlow", color: "pink-text-gradient" },
+      { name: "Speech Recognition", color: "blue-text-gradient" },
     ],
-    image: financialflowimage,
-    source_code_link: "https://github.com/sunnypatell/financialflow",
-    live_project_link: "https://financial-flow.vercel.app/",
+    image: DoctorAI, // Add project image path
+    source_code_link: "", // Add GitHub repo link if available
+    live_project_link: "", // Add live link if available
   },
   {
-    name: "Sunnify (Spotify Downloader) ♫",
+    name: "Sanket – The Voice of Unheard ✋",
     description:
-      "Sunnify is a Spotify downloader webapp/desktop application that allows you to download entire playlists locally onto your Mac/Linux/Windows PC. The web version of the app is hosted on AWS Lambda and Elastic Beanstalk, with FastAPI ASGI production.",
+      "A real-time sign language detection and translation system that converts sign gestures into text and vice versa. Implemented using Teachable Machine, TensorFlow.js, Keras, and OpenCV for gesture recognition.",
     tags: [
-      {
-        name: "python",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "webscraping",
-        color: "green-text-gradient",
-      },
-      {
-        name: "AWS Lambda/Beanstalk",
-        color: "pink-text-gradient",
-      },
-      {
-        name: "Proxy/API",
-        color: "blue-text-gradient",
-      },
+      { name: "TensorFlow.js", color: "blue-text-gradient" },
+      { name: "Keras", color: "green-text-gradient" },
+      { name: "OpenCV", color: "pink-text-gradient" },
+      { name: "Teachable Machine", color: "blue-text-gradient" },
     ],
-    image: sunnifyimage,
-    source_code_link:
-      "https://github.com/sunnypatell/sunnify-spotify-downloader",
-    live_project_link: "https://sunnify-spotify-downloader.vercel.app/",
+    image: Sanket, // Add project image path
+    source_code_link: "", // Add GitHub repo link if available
+    live_project_link: "", // Add live link if available
   },
   {
-    name: "Enterprise API Tester 🌐",
+    name: "Voice Assistance 🎙️",
     description:
-      "Comprehensive API testing tool with support for all major HTTP methods, authentication, and CORS-friendly proxy. Features include request import/export, real-world samples, and local storage for data persistence. Built with Next.js, and TypeScript for optimal performance and developer experience.",
+      "A sophisticated voice-controlled assistant developed in Python, leveraging speech recognition and NLP to interpret and execute user voice commands. It can perform tasks such as searching the web, opening applications, reading out information, and automating basic system operations.",
     tags: [
-      {
-        name: "Typescript",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "Tailwind CSS",
-        color: "green-text-gradient",
-      },
-      {
-        name: "Next.js",
-        color: "pink-text-gradient",
-      },
-      {
-        name: "Authentication-Body",
-        color: "blue-text-gradient",
-      },
+      { name: "Python", color: "blue-text-gradient" },
+      { name: "Speech Recognition", color: "green-text-gradient" },
+      { name: "NLP", color: "pink-text-gradient" },
+      { name: "Automation", color: "blue-text-gradient" },
     ],
-    image: enterpriseapitester,
-    source_code_link:
-      "https://github.com/sunnypatell/enterprise-api-request-tester",
-    live_project_link: "https://enterprise-api-request-tester.vercel.app/",
+    image: Assistant, // Add project image path
+    source_code_link: "", // Add GitHub repo link if available
+    live_project_link: "", // Add live link if available
   },
   {
-    name: "KnifeThrow 🎯",
+    name: "Pharmacy-POS App (PharmaSpot) 💊",
     description:
-      "KnifeThrow is a Java Swing-based 2D mini-game, packed by maven with over 5000 lines of code. It includes a menu, game-over screens, sound effects, and custom sprites. Players unlock different knives with varied abilities in a dedicated knife shop. The game features improved collision systems, animations, and particle effects for an immersive experience.",
+      "A pharmacy point-of-sale (POS) web application built with React Native, designed to manage pharmacy operations efficiently. It includes inventory management, sales tracking, prescription handling, and customer service with a user-friendly interface.",
     tags: [
-      {
-        name: "java",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "swing",
-        color: "green-text-gradient",
-      },
-      {
-        name: "maven",
-        color: "pink-text-gradient",
-      },
-      {
-        name: "arcadegame",
-        color: "green-text-gradient",
-      },
+      { name: "React Native", color: "blue-text-gradient" },
+      { name: "POS System", color: "green-text-gradient" },
+      { name: "Inventory Management", color: "pink-text-gradient" },
+      { name: "Sales Tracking", color: "blue-text-gradient" },
     ],
-    image: knifethrowimage,
-    source_code_link: "https://github.com/sunnypatell/KnifeThrow",
-    live_project_link: "https://github.com/sunnypatell/KnifeThrow",
+    image: PharmaPOS, // Add project image path
+    source_code_link: "", // Add GitHub repo link if available
+    live_project_link: "", // Add live link if available
   },
   {
-    name: "COVID-19 GTA Cases Data Analysis 🧪",
+    name: "Air Hockey Game 🏒",
     description:
-      "A deep dive into ongoing COVID-19 outbreaks in the Greater Toronto Area (GTA), Ontario. Using data from a government-licensed dataset called Outbreaks by Public Health Unit (PHU) to explore trends and patterns in these outbreaks. This data analysis integrates the essential aspects of the data science workflow (Filesize: 3.5 MiB, 62699 lines of raw dataset)",
+      "A dynamic Air Hockey game developed in Python using Tkinter for GUI development. Features smooth gameplay mechanics, scoring system, and interactive animations.",
     tags: [
-      {
-        name: "python",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "tensorflow",
-        color: "green-text-gradient",
-      },
-      {
-        name: "scikit-learn",
-        color: "pink-text-gradient",
-      },
-      {
-        name: "pandas",
-        color: "green-text-gradient",
-      },
-      {
-        name: "matplotlib",
-        color: "pink-text-gradient",
-      },
-      {
-        name: "numpy",
-        color: "blue-text-gradient",
-      },
+      { name: "Python", color: "blue-text-gradient" },
+      { name: "Tkinter", color: "green-text-gradient" },
+      { name: "Game Development", color: "pink-text-gradient" },
     ],
-    image: pythonanalysis,
-    source_code_link:
-      "https://drive.google.com/drive/folders/1cTbp-6-flypV-kj3-q606UwwWEralu11",
-    live_project_link:
-      "https://drive.google.com/drive/folders/1cTbp-6-flypV-kj3-q606UwwWEralu11",
-  },
-  {
-    name: "Secure Password Generator 🔐",
-    description:
-      "Secure Password Generator is a Java-based tool designed to generate and manage secure passwords, prioritizing simplicity, security, and user-friendliness. It employs industry-standard encryption algorithms to create strong, unique passwords resistant to common hacking attempts.",
-    tags: [
-      {
-        name: "java",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "sha-256",
-        color: "green-text-gradient",
-      },
-      {
-        name: "encryption/decryption",
-        color: "pink-text-gradient",
-      },
-      {
-        name: "data-algorithms",
-        color: "blue-text-gradient",
-      },
-    ],
-    image: password_generator,
-    source_code_link: "https://github.com/sunnypatell/SecurePasswordGenerator",
-    live_project_link: "https://github.com/sunnypatell/SecurePasswordGenerator",
+    image: Hockey, // Add project image path
+    source_code_link: "", // Add GitHub repo link if available
+    live_project_link: "", // Add live link if available
   },
 ];
 

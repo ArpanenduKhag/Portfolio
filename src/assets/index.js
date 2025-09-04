@@ -27,6 +27,8 @@ import python from "./tech/python.png";
 import cplusplus from "./tech/c++.svg";
 import typescript from "./tech/typescript.png";
 import threejs from "./tech/threejs.svg";
+import C from "./tech/C.png";
+import SQL from "./tech/SQL.png";
 
 import azure from "./tech/azure.png";
 import powershell from "./tech/powershell.svg";
@@ -40,11 +42,17 @@ import metasploit from "./tech/metasploit.svg";
 import johntheripper from "./tech/johntheripper.svg";
 import hydra from "./tech/hydra.svg";
 import aircrackng from "./tech/aircrackng.svg";
+import GIT_1 from "./tech/GIT_1.png";
+import PowerBI from "./tech/PowerBI.png";
+import Teams from "./tech/Teams.png";
+import Slack from "./tech/Slack.png";
+import VSC from "./tech/VSC.png";
 
 import photoshop from "./tech/photoshop.svg";
 import premiere from "./tech/premiere.svg";
 import cinema4d from "./tech/cinema4d.png";
 import blender from "./tech/blender.svg";
+import Canva from "./tech/canva.png";
 
 import otu from "./company/otu.png";
 import BCREC from "./company/BCREC.jpeg";
@@ -61,6 +69,12 @@ import GDG_dgp from "./company/GDG_dgp.webp";
 import google from "./company/google.png";
 import whmis from "./company/whmis.png";
 import aws from "./tech/aws.png";
+
+import DoctorAI from "./DoctorAI.png";
+import Sanket from "./Sanket.png";
+import Assistant from "./Assistant.png";
+import PharmaPOS from "./PharmaPOS.png";
+import Hockey from "./Hockey.png";
 
 import sunnifyimage from "./demonstration 2.jpg";
 import knifethrowimage from "./knifethrow_demonstration.jpg";
@@ -108,6 +122,11 @@ export {
   GDG_dgp,
   google,
   whmis,
+  DoctorAI,
+  Sanket,
+  Assistant,
+  PharmaPOS,
+  Hockey,
   sunnifyimage,
   knifethrowimage,
   pythonanalysis,
@@ -139,7 +158,15 @@ export {
   profilepic,
   docker,
   figma,
+  Canva,
+  GIT_1,
+  PowerBI,
+  C,
+  SQL,
   mysql,
+  Teams,
+  Slack,
+  VSC,
   threejs,
   azure,
   staples,
