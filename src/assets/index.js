@@ -46,13 +46,26 @@ import GIT_1 from "./tech/GIT_1.png";
 import PowerBI from "./tech/PowerBI.png";
 import Teams from "./tech/Teams.png";
 import Slack from "./tech/Slack.png";
+import Notion from "./tech/Notion.svg";
 import VSC from "./tech/VSC.png";
+import Jupyter from "./tech/Jupyter.svg";
+import Anaconda from "./tech/Anaconda.svg";
+import Vercel from "./tech/Vercel.svg";
+import Streamlit from "./tech/Streamlit.svg";
+import TensorFlow from "./tech/TensorFlow.svg";
+import PyTorch from "./tech/Pytorch.svg";
+import Keras from "./tech/Keras.svg";
+import Pandas from "./tech/Pandas.svg";
+import NumPy from "./tech/Numpy.svg";
+import Matplotlib from "./tech/Matplotlib.svg";
+import SCIKIT from "./tech/SCIKIT.png";
+import Kaggle from "./tech/Kaggle.svg";
 
 import photoshop from "./tech/photoshop.svg";
 import premiere from "./tech/premiere.svg";
 import cinema4d from "./tech/cinema4d.png";
 import blender from "./tech/blender.svg";
-import Canva from "./tech/canva.png";
+import Canva from "./tech/Canva.svg";
 
 import otu from "./company/otu.png";
 import BCREC from "./company/BCREC.jpeg";
@@ -167,6 +180,19 @@ export {
   Teams,
   Slack,
   VSC,
+  Anaconda,
+  Jupyter,
+  Matplotlib,
+  NumPy,
+  Pandas,
+  SCIKIT,
+  Keras,
+  Streamlit,
+  TensorFlow,
+  PyTorch,
+  Vercel,
+  Notion,
+  Kaggle,
   threejs,
   azure,
   staples,
