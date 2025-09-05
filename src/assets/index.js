@@ -72,7 +72,7 @@ import BCREC from "./company/BCREC.jpeg";
 import DAV from "./company/DAV.png";
 import rhhs from "./company/rhhs.jpg";
 import wonderland from "./company/wonderland.jpg";
-import Capsitech_Technologies from "./company/capsitech_technologies.png";
+import Capsitech_Technologies from "./company/Capsitech_Technologies.png";
 import mackenziehealth from "./company/mackenziehealth.png";
 import DiMark_AI from "./company/DiMark_AI.png";
 import privcurity from "./company/privcurity.jpg";
