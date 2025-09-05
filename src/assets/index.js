@@ -153,8 +153,6 @@ export {
   resume,
   awsdbcert,
   connectwisecert,
-  financialflowimage,
-  enterpriseapitester,
   profilepic,
   docker,
   figma,
