@@ -69,7 +69,7 @@ import Canva from "./tech/Canva.svg";
 
 import otu from "./company/otu.png";
 import BCREC from "./company/BCREC.jpeg";
-import DAV from "./company/dav.png";
+import DAV from "./company/DAV.png";
 import rhhs from "./company/rhhs.jpg";
 import wonderland from "./company/wonderland.jpg";
 import Capsitech_Technologies from "./company/capsitech_technologies.png";
