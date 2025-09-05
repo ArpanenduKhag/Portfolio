@@ -89,14 +89,6 @@ import Assistant from "./Assistant.png";
 import PharmaPOS from "./PharmaPOS.png";
 import Hockey from "./Hockey.png";
 
-import sunnifyimage from "./demonstration 2.jpg";
-import knifethrowimage from "./knifethrow_demonstration.jpg";
-import pythonanalysis from "./data_analysis.png";
-import password_generator from "./passwordgenerator.png";
-import wordsearch from "./wordsearchoutput.jpg";
-import financialflowimage from "./FinancialFlowDemonstration.png";
-import enterpriseapitester from "./enterpriseapiui.png";
-
 import resume from "./Resume-Arpanendu_Khag.pdf";
 import awsdbcert from "./AWS Database Specialty Certified - Sunny Jayendra Patel.jpg";
 import connectwisecert from "./Connectwise-Scripting-Certification.pdf";
@@ -140,11 +132,6 @@ export {
   Assistant,
   PharmaPOS,
   Hockey,
-  sunnifyimage,
-  knifethrowimage,
-  pythonanalysis,
-  password_generator,
-  wordsearch,
   python,
   cplusplus,
   typescript,
