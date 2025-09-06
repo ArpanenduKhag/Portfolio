@@ -90,8 +90,9 @@ import PharmaPOS from "./PharmaPOS.png";
 import Hockey from "./Hockey.png";
 
 import resume from "./Resume-Arpanendu_Khag.pdf";
-import awsdbcert from "./AWS Database Specialty Certified - Sunny Jayendra Patel.jpg";
-import connectwisecert from "./Connectwise-Scripting-Certification.pdf";
+import PowerBIcert from "./certificate_Power BI & Business Intelligence_791409.pdf";
+import Githubcert from "./certificate_GitHub_791409.pdf";
+import COE from "./COECert.pdf";
 
 export {
   logo,
@@ -151,8 +152,9 @@ export {
   cinema4d,
   blender,
   resume,
-  awsdbcert,
-  connectwisecert,
+  PowerBIcert,
+  Githubcert,
+  COE,
   profilepic,
   docker,
   figma,

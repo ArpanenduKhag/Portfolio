@@ -50,8 +50,6 @@ import {
   premiere,
   cinema4d,
   blender,
-  connectwisecert,
-  awsdbcert,
   figma,
   Canva,
   GIT_1,
@@ -63,6 +61,9 @@ import {
   Slack,
   github,
   mongodb,
+  PowerBIcert,
+  Githubcert,
+  COE,
 } from "../assets";
 
 export const navLinks = [
@@ -322,63 +323,61 @@ const experiences = [
 
 const extracurricular = [
   {
-    title: "MongoDB Python Developer Path",
-    type: "Proof of Completion",
-    icon: mongodb,
-    iconBg: "#000000",
-    date: "Feb 2025",
+    title: "Center of Excellence: Data Engineering",
+    type: "Certificate of Completion | Celebal Technologies",
+    icon: Celebal_Technologies, // Assuming 'celebal' icon is defined
+    iconBg: "#0078D4", // A color associated with Celebal/Microsoft
     points: [
-      "PyMongo, NoSQL Schema Design, Data Aggregation, MongoDB Query Optimization",
+      "Recognized for the outstanding completion of the Center of Excellence Program in the Data Engineering domain. [cite: 17]",
+      "Commended as hardworking, enthusiastic, and diligent during the training period. [cite: 18]",
     ],
-    credential: "https://learn.mongodb.com/c/tf2DSC7hTcyM3NBZjkLPoA",
+    credential: COE,
   },
   {
-    title: "Github Foundations",
-    type: "Professional Certificate",
+    title: "Power BI & Business Intelligence",
+    type: "Certificate Of Graduation | PrepInsta",
+    icon: PowerBI,
+    iconBg: "#F2C811",
+    date: "Dec 2024",
+    points: [
+      "Completed foundational training in data visualization, reporting, and business intelligence using the Power BI platform.",
+    ],
+    credential: PowerBIcert,
+  },
+  {
+    title: "GitHub",
+    type: "Certificate Of Graduation | PrepInsta",
     icon: github,
     iconBg: "#000000",
-    date: "Issued: Sep 2024 - Expires: Sep 2027",
+    date: "Dec 2024",
     points: [
-      "Version Control, Git, Actions, CI/CD, Repository Management, SAP Workflow",
+      "Successfully finished a course on GitHub fundamentals for version control and repository management.",
     ],
-    credential:
-      "https://www.credly.com/badges/b6f69785-2da8-447e-b02c-3350bf9af803",
+    credential: Githubcert,
   },
   {
-    title: "Certified Enterprise Scripting Architect",
-    type: "Automate | Connectwise University",
-    icon: connectwise,
-    iconBg: "#748C7B",
+    title: "SQL (Basic & Intermediate)",
+    type: "Skill Certificate | HackerRank",
+    icon: SQL,
+    iconBg: "#2EC866",
     date: "Jul 2024",
     points: [
-      "RMM, MDM, Powershell, Scripting, Windows Server, Enterprise Architecture, Query Optimization",
+      "Demonstrated proficiency in SQL, including simple queries, aggregators, complex joins, unions, and sub-queries.",
     ],
-    credential: connectwisecert,
+    credential: "https://www.hackerrank.com/certificates/e4251e341c29",
   },
   {
-    title: "Google IT Automation With Python",
-    type: "Professional Certificate",
-    icon: google,
-    iconBg: "#050C18",
-    date: "Mar 2023",
+    title: "Python (Basic)",
+    type: "Skill Certificate | HackerRank",
+    icon: python,
+    iconBg: "#2EC866",
+    date: "Sep 2022",
     points: [
-      "Configuration Management, Automation, Google Cloud Platform (GCP), Cloud Servers and VM's, Version Control Tools, Automation.",
+      "Verified skills in Python fundamentals, covering data types, control flow, collections, modularity, and object-oriented principles.",
     ],
-    credential:
-      "https://www.coursera.org/account/accomplishments/specialization/certificate/82SZFUWF4B3T",
-  },
-  {
-    title: "WHMIS (Worker Health and Safety)",
-    type: "Government Workforce Requirement",
-    icon: whmis,
-    iconBg: "#CCCFD8",
-    date: "Sep 2020",
-    points: [
-      "Hazard Awareness, Legal Compliance, Personal Protection, Accident Prevention",
-    ],
+    credential: "https://www.hackerrank.com/certificates/75736de1e5da",
   },
 ];
-
 const projects = [
   {
     name: "Doctor AI – Healthcare Chatbot 🩺",
