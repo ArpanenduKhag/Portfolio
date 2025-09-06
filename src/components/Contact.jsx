@@ -3,7 +3,6 @@ import { motion } from "framer-motion";
 import emailjs from "@emailjs/browser";
 import { Toaster, toast } from "react-hot-toast";
 import Confetti from "react-confetti";
-import ReCAPTCHA from "react-google-recaptcha"; // <-- NEW
 
 import { styles } from "../styles";
 import { EarthCanvas } from "./canvas";
@@ -22,8 +21,7 @@ import {
 
 const Contact = () => {
   const formRef = useRef();
-  const captchaRef = useRef(); // <-- NEW
-  const [captchaToken, setCaptchaToken] = useState(null); // <-- NEW
+  const [captchaToken, setCaptchaToken] = useState(null); // <-- v3 token
   const [form, setForm] = useState({
     name: "",
     email: "",
@@ -64,6 +62,30 @@ const Contact = () => {
     };
   }, [showConfetti]);
 
+  // 🔹 Load reCAPTCHA v3 script
+  useEffect(() => {
+    const script = document.createElement("script");
+    script.src = `https://www.google.com/recaptcha/api.js?render=${
+      import.meta.env.VITE_RECAPTCHA_SITE_KEY
+    }`;
+    script.async = true;
+    document.body.appendChild(script);
+
+    script.onload = () => {
+      if (window.grecaptcha) {
+        window.grecaptcha.ready(() => {
+          window.grecaptcha
+            .execute(import.meta.env.VITE_RECAPTCHA_SITE_KEY, {
+              action: "submit",
+            })
+            .then((token) => {
+              setCaptchaToken(token);
+            });
+        });
+      }
+    };
+  }, []);
+
   const handleChange = (e) => {
     const { name, value } = e.target;
     setForm({ ...form, [name]: value });
@@ -81,14 +103,11 @@ const Contact = () => {
     }
 
     if (!captchaToken) {
-      toast(
-        "Hold up! Gotta make sure you're not a spam bot, checkmark the CAPTCHA! 🧠🤖",
-        {
-          icon: "🛡️",
-          duration: 3500,
-          position: "bottom-right",
-        }
-      );
+      toast("Hold up! Verifying you're human... 🧠🤖", {
+        icon: "🛡️",
+        duration: 3500,
+        position: "bottom-right",
+      });
       return;
     }
 
@@ -104,6 +123,7 @@ const Contact = () => {
           from_email: form.email,
           to_email: "arpanendu2403@gmail.com",
           message: form.message,
+          "g-recaptcha-response": captchaToken, // pass token if backend verifies
         },
         import.meta.env.VITE_EMAIL_JS_ACCESS_TOKEN
       )
@@ -117,8 +137,7 @@ const Contact = () => {
             position: "bottom-right",
           });
           setShowConfetti(true);
-          setCaptchaToken(null);
-          captchaRef.current.reset(); // reset captcha after submit
+          setCaptchaToken(null); // clear token after submit
           setTimeout(() => {
             setSuccess(false);
             setShowConfetti(false);
@@ -232,17 +251,9 @@ const Contact = () => {
             />
           </label>
 
-          {/* 🤖 CAPTCHA Field */}
-          <div className="flex justify-center">
-            <ReCAPTCHA
-              sitekey={import.meta.env.VITE_RECAPTCHA_SITE_KEY}
-              onChange={(token) => setCaptchaToken(token)}
-              theme="dark"
-              ref={captchaRef}
-            />
-          </div>
+          {/* 🤖 CAPTCHA Field (no widget for v3) */}
           <span className="text-xs text-gray-400 text-center -mt-2">
-            Protected by reCAPTCHA Enterprise. ⚔️
+            Protected by reCAPTCHA v3 ⚔️
           </span>
 
           <button
