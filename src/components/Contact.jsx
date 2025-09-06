@@ -21,7 +21,7 @@ import {
 
 const Contact = () => {
   const formRef = useRef();
-  const [captchaToken, setCaptchaToken] = useState(null); // <-- v3 token
+  const [captchaToken, setCaptchaToken] = useState(null); // v3 token
   const [form, setForm] = useState({
     name: "",
     email: "",
@@ -36,27 +36,21 @@ const Contact = () => {
     height: window.innerHeight,
   });
 
-  const detectSize = () => {
-    setWindowDimension({
-      width: window.innerWidth,
-      height: window.innerHeight,
-    });
-  };
-
+  // track resize for confetti
   useEffect(() => {
-    window.addEventListener("resize", detectSize);
-    return () => {
-      window.removeEventListener("resize", detectSize);
+    const detectSize = () => {
+      setWindowDimension({
+        width: window.innerWidth,
+        height: window.innerHeight,
+      });
     };
+    window.addEventListener("resize", detectSize);
+    return () => window.removeEventListener("resize", detectSize);
   }, []);
 
+  // disable X-scroll when confetti
   useEffect(() => {
-    if (showConfetti) {
-      document.body.style.overflowX = "hidden";
-    } else {
-      document.body.style.overflowX = "";
-    }
-
+    document.body.style.overflowX = showConfetti ? "hidden" : "";
     return () => {
       document.body.style.overflowX = "";
     };
@@ -118,14 +112,12 @@ const Contact = () => {
         import.meta.env.VITE_EMAILJS_SERVICE_ID,
         import.meta.env.VITE_EMAILJS_TEMPLATE_ID,
         {
-          from_name: form.name,
-          to_name: "Arpanendu Khag",
-          from_email: form.email,
-          to_email: "arpanendu2403@gmail.com",
-          message: form.message,
-          "g-recaptcha-response": captchaToken, // pass token if backend verifies
+          from_name: form.name, // ✅ matches {{from_name}}
+          Email: form.email, // ✅ matches {{Email}}
+          Message: form.message, // ✅ matches {{Message}}
+          "g-recaptcha-response": captchaToken, // optional if backend verifies
         },
-        import.meta.env.VITE_EMAIL_JS_ACCESS_TOKEN
+        import.meta.env.VITE_EMAILJS_PUBLIC_KEY // ✅ make sure using PUBLIC key
       )
       .then(
         () => {
@@ -137,7 +129,7 @@ const Contact = () => {
             position: "bottom-right",
           });
           setShowConfetti(true);
-          setCaptchaToken(null); // clear token after submit
+          setCaptchaToken(null); // reset token
           setTimeout(() => {
             setSuccess(false);
             setShowConfetti(false);
