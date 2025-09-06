@@ -35,7 +35,6 @@ import {
   Assistant,
   PharmaPOS,
   Hockey,
-  // wordsearch,
   powershell,
   cisco,
   connectwise,
