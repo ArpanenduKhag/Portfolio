@@ -93,6 +93,8 @@ import resume from "./Resume-Arpanendu_Khag.pdf";
 import PowerBIcert from "./certificate_Power BI & Business Intelligence_791409.pdf";
 import Githubcert from "./certificate_GitHub_791409.pdf";
 import COE from "./COECert.pdf";
+import javacert from "./Java-Certificate.pdf";
+import devfest from "./DEVFEST1.png";
 
 export {
   logo,
@@ -154,6 +156,8 @@ export {
   resume,
   PowerBIcert,
   Githubcert,
+  javacert,
+  devfest,
   COE,
   profilepic,
   docker,

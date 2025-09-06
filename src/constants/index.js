@@ -64,6 +64,8 @@ import {
   PowerBIcert,
   Githubcert,
   COE,
+  javacert,
+  devfest,
 } from "../assets";
 
 export const navLinks = [
@@ -376,6 +378,29 @@ const extracurricular = [
       "Verified skills in Python fundamentals, covering data types, control flow, collections, modularity, and object-oriented principles.",
     ],
     credential: "https://www.hackerrank.com/certificates/75736de1e5da",
+  },
+  {
+    title: "Java Training",
+    type: "Certificate of Completion | Spoken Tutorial, IIT Bombay",
+    icon: java,
+    iconBg: "#8A2432",
+    date: "Nov 2023",
+    points: [
+      "Successfully completed Java training offered by the Spoken Tutorial Project, IIT Bombay.",
+      "Achieved a score of 72.50% by passing a remotely conducted online examination.",
+    ],
+    credential: javacert,
+  },
+  {
+    title: "DevFest'23 Durgapur",
+    type: "Certificate of Participation | Google Developer Groups",
+    icon: google,
+    iconBg: "#4285F4",
+    date: "2023",
+    points: [
+      "Attended DevFest'23, a community-led developer event organized by Google Developer Groups (GDG) Durgapur.",
+    ],
+    credential: devfest,
   },
 ];
 const projects = [
