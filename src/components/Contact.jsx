@@ -171,7 +171,7 @@ const Contact = () => {
         <div className="flex justify-between items-center mb-4">
           <p className={styles.sectionSubText}>Get in touch</p>
           <a
-            href="tel:+14372161611"
+            href="tel:+919635704940"
             className="text-purple-500 hover:text-purple-400 transition-colors duration-300 flex items-center"
           >
             <FontAwesomeIcon icon={faPhone} className="mr-2" />
